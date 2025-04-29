@@ -1604,3 +1604,266 @@ a {
   .cat-angry #eye-right {
     transform: rotate(5deg) scale(0.8);
   }
+
+  /* Resume Page Specific Styles */
+.resume_sections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.resume_section h2 {
+    color: #1C1C1C;
+    font-family: Italiana;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f99;
+    padding-bottom: 0.5rem;
+}
+
+.resume_item {
+    margin-bottom: 2rem;
+}
+
+.resume_item h3 {
+    color: #1C1C1C;
+    font-family: "Istok Web";
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    color: #707B81;
+    font-family: "Istok Web";
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.resume_item ul {
+    margin-left: 1.5rem;
+}
+
+.resume_item li {
+    color: #1C1C1C;
+    font-family: "Istok Web";
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+.skills_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skill_category h3 {
+    color: #1C1C1C;
+    font-family: "Istok Web";
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.skill_category ul {
+    margin-left: 1rem;
+}
+
+.skill_category li {
+    color: #1C1C1C;
+    font-family: "Istok Web";
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skill_category li:before {
+    content: "•";
+    color: #f99;
+    position: absolute;
+    left: 0;
+}
+
+.resume_actions {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.resume_button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f99;
+    color: white;
+    font-family: "Istok Web";
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resume_button:hover {
+    background-color: #f66;
+    transform: translateY(-3px);
+}
+
+/* Work Page Specific Styles */
+.portfolio_items {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.portfolio_item {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.portfolio_content {
+    flex: 1;
+}
+
+.portfolio_content h2 {
+    color: #1C1C1C;
+    font-family: Italiana;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio_content p {
+    color: #1C1C1C;
+    font-family: "Istok Web";
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio_content ul {
+    margin-left: 1.5rem;
+}
+
+.portfolio_content li {
+    color: #1C1C1C;
+    font-family: "Istok Web";
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+.portfolio_image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio_image img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.work_cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.work_cta p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Page Specific Styles */
+.contact_container {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.contact_info {
+    flex: 1;
+}
+
+.contact_info h2 {
+    color: #1C1C1C;
+    font-family: Italiana;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact_info p {
+    color: #1C1C1C;
+    font-family: "Istok Web";
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact_methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact_method h3 {
+    color: #1C1C1C;
+    font-family: "Istok Web";
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact_method p {
+    margin-bottom: 0.5rem;
+}
+
+.contact_method a {
+    color: #f99;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contact_method a:hover {
+    text-decoration: underline;
+}
+
+.contact_form {
+    flex: 1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .resume_sections, .portfolio_items, .contact_container {
+        flex-direction: column;
+    }
+    
+    .skills_grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio_item {
+        flex-direction: column;
+    }
+    
+    .resume_actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .resume_button, .work_cta a {
+        width: 100%;
+        text-align: center;
+    }
+}
